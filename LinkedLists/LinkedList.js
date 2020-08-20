@@ -129,6 +129,9 @@ class LinkedList {
     return deletedTail;
   }
 }
+
+module.exports = LinkedList;
+module.exports = Node;
 // Simple test
 const arr = [1, 2, 3, 4, 5, 6];
 const list = new LinkedList(arr);

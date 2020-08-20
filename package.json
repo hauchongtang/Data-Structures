@@ -1,0 +1,22 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "- Personal notes for my learning of DS and to practise with testing, with tests for implemented classes/ functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thchong-code/Data-Structures.git"
+  },
+  "author": "Hau Chong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thchong-code/Data-Structures/issues"
+  },
+  "homepage": "https://github.com/thchong-code/Data-Structures#readme",
+  "devDependencies": {
+    "jest": "^26.4.0"
+  }
+}
