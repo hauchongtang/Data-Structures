@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "- Personal notes for my learning of DS and to practise with testing, with tests for implemented classes/ functions.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
