@@ -1,8 +1,9 @@
-class QuickUnion {
+class EfficientQuickUnion {
   constructor(N) {
     this.id = [];
     for (let i = 0; i < N; i++) {
       this.id[i] = i;
+      this.size[i] = 1;
     }
   }
   root(i) {
@@ -17,10 +18,13 @@ class QuickUnion {
   union(p, q) {
     var i = this.id[p];
     var j = this.id[q];
-    this.id[i] = j;
+    if (i === j) return;
+    if (size[i] < size[j]) {
+      this.id[i] = j;
+      size[j] += size[i];
+    } else {
+      this.id[j] = i;
+      size[i] += size[j];
+    }
   }
 }
-const node = new QuickUnion(6);
-node.union(1, 5);
-const test = node.connected(1, 5);
-console.log(test); // true
