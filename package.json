@@ -19,5 +19,8 @@
   "homepage": "https://github.com/thchong-code/Data-Structures#readme",
   "devDependencies": {
     "jest": "^26.4.0"
+  },
+  "dependencies": {
+    "@hediet/debug-visualizer-data-extraction": "^0.12.0"
   }
 }

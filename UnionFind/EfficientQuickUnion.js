@@ -16,8 +16,8 @@ class EfficientQuickUnion {
     return this.id[p] === this.id[q];
   }
   union(p, q) {
-    var i = this.id[p];
-    var j = this.id[q];
+    var i = root(p);
+    var j = root(q);
     if (i === j) return;
     if (size[i] < size[j]) {
       this.id[i] = j;
