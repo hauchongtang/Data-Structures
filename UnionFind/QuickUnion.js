@@ -15,8 +15,8 @@ class QuickUnion {
     return this.id[p] === this.id[q];
   }
   union(p, q) {
-    var i = this.id[p];
-    var j = this.id[q];
+    var i = root(p);
+    var j = root(q);
     this.id[i] = j;
   }
 }
