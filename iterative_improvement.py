@@ -65,3 +65,15 @@ square_successor = compose1(square, successor)
 print(square_successor(12))  # 13^2 = 169
 
 # Case Study: Newton's Method
+
+
+def newton_update(f, df):
+    def update(x):
+        return x-f(x)/df(x)
+    return update
+
+
+def find_root(f, df):
+    def near_zero(x):
+        return approx(f(x), 0)
+    return improve(newton_update(f, df), near_zero)
