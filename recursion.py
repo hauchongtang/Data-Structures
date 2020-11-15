@@ -142,3 +142,8 @@ def fibonacci(n):
 
 result = fibonacci(6)
 print(result)
+
+# Counting partitions
+
+
+def count_partitations(n, m):
